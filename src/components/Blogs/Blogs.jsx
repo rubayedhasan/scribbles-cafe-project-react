@@ -11,9 +11,9 @@ const Blogs = () => {
   }, []);
 
   return (
-    <>
+    <div className="w-2/3 border">
       <h1>Blogs</h1>
-    </>
+    </div>
   );
 };
 
