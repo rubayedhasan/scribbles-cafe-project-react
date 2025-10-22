@@ -6,6 +6,7 @@
     "author": "Samantha Lee",
     "author_img": "https://i.ibb.co.com/n8BK7Vd4/boy1.png",
     "reading_time": 7,
+    "posted_date": "Oct-18, 2025",
     "hashtags": ["#AI", "#Programming", "#SoftwareDevelopment"]
   },
   {
@@ -15,6 +16,7 @@
     "author": "David Kim",
     "author_img": "https://i.ibb.co.com/Fbp15X1G/boy2.jpg",
     "reading_time": 5,
+    "posted_date": "Oct-15, 2025",
     "hashtags": ["#JavaScript", "#CodingTips", "#WebDev"]
   },
   {
@@ -24,6 +26,7 @@
     "author": "Elena Torres",
     "author_img": "https://i.ibb.co.com/gMpZF5Sz/girl1.jpg",
     "reading_time": 9,
+    "posted_date": "Oct-12, 2025",
     "hashtags": ["#Python", "#DataScience", "#Beginner"]
   },
   {
@@ -33,6 +36,7 @@
     "author": "Markus Patel",
     "author_img": "https://i.ibb.co.com/Z6wPQyhJ/girl2.jpg",
     "reading_time": 6,
+    "posted_date": "Oct-8, 2025",
     "hashtags": ["#Blockchain", "#Solidity", "#Web3"]
   },
   {
@@ -42,6 +46,7 @@
     "author": "Nina Okafor",
     "author_img": "https://i.ibb.co.com/Fbp15X1G/boy2.jpg",
     "reading_time": 8,
+    "posted_date": "Oct-3, 2025",
     "hashtags": ["#UX", "#Frontend", "#DeveloperTips"]
   }
 ]
