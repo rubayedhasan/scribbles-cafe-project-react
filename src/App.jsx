@@ -15,9 +15,15 @@ function App() {
   };
 
   // function:: handle mark as read for display sum of reading time
-  const handleMarkAsRead = (time) => {
+  const handleMarkAsRead = (id, time) => {
     const newReadingTime = readingTime + time;
     setReadingTime(newReadingTime);
+
+    // remove blog from bookmark after complete the reading
+    const remainingBookmarks = bookmarks.filter(
+      (bookmark) => bookmark.id !== id
+    );
+    setBookmarks(remainingBookmarks);
   };
 
   return (

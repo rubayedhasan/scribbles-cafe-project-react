@@ -1,8 +1,8 @@
-/* tailwindcss styles  */
-@import "tailwindcss";
-
 /* import google font 'EXO 2' */
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* tailwindcss styles  */
+@import "tailwindcss";
 
 /* common styles  */
 body {

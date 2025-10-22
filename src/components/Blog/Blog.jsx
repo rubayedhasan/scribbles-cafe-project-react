@@ -4,6 +4,7 @@ import { FaRegBookmark } from "react-icons/fa";
 const Blog = ({ blog, handleAddToBookmark, handleMarkAsRead }) => {
   // destructuring the blog object
   const {
+    id,
     title,
     cover,
     author,
@@ -83,7 +84,7 @@ const Blog = ({ blog, handleAddToBookmark, handleMarkAsRead }) => {
       {/* read mark  */}
 
       <button
-        onClick={() => handleMarkAsRead(reading_time)}
+        onClick={() => handleMarkAsRead(id, reading_time)}
         className="font-semibold text-xl text-[#6047EC] mt-5 underline cursor-pointer"
         type="button"
       >
