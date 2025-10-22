@@ -1,12 +1,14 @@
 import PropTypes from "prop-types";
 import Bookmark from "../Bookmark/Bookmark";
 
-const Bookmarks = ({ bookmarks }) => {
+const Bookmarks = ({ bookmarks, readingTime }) => {
   return (
     <div className="md:w-1/3">
       {/* time table  */}
-      <div>
-        <p>Spent time on read : 177 min</p>
+      <div className="px-12 py-5 bg-[#6047EC1A] border border-[#6047EC1A] rounded-lg">
+        <p className="font-bold text-xl text-[#6047EC]">
+          Spent time on read : {readingTime} min
+        </p>
       </div>
 
       {/* bookmarked blogs container  */}
@@ -24,6 +26,7 @@ const Bookmarks = ({ bookmarks }) => {
 
 Bookmarks.propTypes = {
   bookmarks: PropTypes.array.isRequired,
+  readingTime: PropTypes.number.isRequired,
 };
 
 export default Bookmarks;
