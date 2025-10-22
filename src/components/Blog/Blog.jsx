@@ -54,7 +54,7 @@ const Blog = ({ blog, handleAddToBookmark }) => {
 
           {/* bookmark button  */}
           <button
-            onClick={handleAddToBookmark}
+            onClick={() => handleAddToBookmark(blog)}
             className="text-2xl cursor-pointer hover:text-rose-500"
             type="button"
           >

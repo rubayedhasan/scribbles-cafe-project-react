@@ -1,12 +1,16 @@
+import { useState } from "react";
 import "./App.css";
 import Blogs from "./components/Blogs/Blogs";
-import Bookmark from "./components/Bookmark/Bookmark";
 import Header from "./components/Header/Header";
+import Bookmarks from "./components/Bookmarks/Bookmarks";
 
 function App() {
+  const [bookmarks, setBookmarks] = useState([]);
+
   // function:: handler function for blog to add bookmark
   const handleAddToBookmark = (blog) => {
-    console.log("bookmark is coming soon");
+    const newBookmarks = [...bookmarks, blog];
+    setBookmarks(newBookmarks);
   };
 
   return (
@@ -15,12 +19,12 @@ function App() {
       <Header></Header>
 
       {/* main section  */}
-      <main className="w-4/5 mx-auto md:flex gap-6">
+      <main className="w-11/12 md:w-4/5 mx-auto md:flex gap-6">
         {/* blog component  */}
         <Blogs handleAddToBookmark={handleAddToBookmark}></Blogs>
 
         {/* bookmark component  */}
-        <Bookmark></Bookmark>
+        <Bookmarks bookmarks={bookmarks}></Bookmarks>
       </main>
     </>
   );
